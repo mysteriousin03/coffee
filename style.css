@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    width: 100%;
+    height: 100%;
+    background: white;
+    background-size: cover;
+    z-index: -2;
+}
+header nav{
+    background: #D6AD60;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+header label.logo{
+    color:#F4EBD0;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  header label.logo span{
+    color: #F4EBD0;
+  }
+header nav ul{
+    float: right;
+    margin-right: 20px;
+}
+header nav ul li{
+    display: inline;
+    margin: 0 5px;
+    text-align: center;
+}
+header nav ul li a{
+      color: #122620;
+      font-size: 20px;
+      padding: 6px 12px;
+      border-radius: 2px;
+      text-decoration: none;
+}
+header nav ul li a.active{
+    color: #F4EBD0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+header nav ul li a:hover{
+    color: #F4EBD0;
+    transition:0.5s;
+    cursor: pointer;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #122620;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:770px){
+    header{
+        background: #D6AD60;
+        height: 100vh;
+    }
+    .checkbtn{
+        display: table-column;
+    }
+    #check{
+        left: 0;
+    }
+    label.logo{
+        font-size: 25px;
+        padding-left: 45px;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #F4EBD0;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 45px 0;
+        line-height: 25px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li a.active a:hover{
+        background: #F4EBD0;
+        height: 100vh;
+    }
+}
+#banner{
+     background: url(https://images.news18.com/ibnlive/uploads/2021/12/coffee-mug-16387975963x2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100vh;
+     display: flex;
+}
+#banner h1{
+    color: #F4EBD0;
+    font-size: 50px;
+    padding-top: 250px;
+     text-align: center;
+     font-weight: bold;
+}
+#banner p{
+    color: bisque;
+    font-size: 25px;
+    text-align: centre;
+}
+#banner a{
+    color: #F4EBD0;
+    text-decoration: none;
+    border: 3px solid #D6AD60;
+    padding:4px;
+    cursor: pointer;
+    margin-left: 500px;
+    background: #122620;
+}
+#banner a:hover{
+    color: #D6AD60;
+    transition: 0.5s;
+}
+#about{
+    width: 100%;
+    height: 100vh;
+    background-color: #D6AD60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .content{
+    width: 1300px;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+}
+#about .content img{
+    width: 500px;
+    height: auto;
+}
+#about .text h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #F4EBD0;
+    margin-left: 200px;
+    margin-top: -250px;
+}
+#about .text p{
+    color: #122620;
+    font-size: 20px;
+    line-height: 25px;
+    margin-left:550px ;
+}
+#about .text a{
+    color: #F4EBD0;
+    text-decoration: none;
+    border: 3px solid #D6AD60;
+    padding:4px;
+    cursor: pointer;
+    margin-left: 550px;
+    background: #122620;
+}
+#about .text a:hover{
+    color: crimson;
+    transition: 0.5s;
+}
+#explore{
+    background: #D6AD60;
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+#explore .container{
+    margin: 40px;
+    flex-direction: none;
+    display: flex;
+    justify-content: space-between;
+}
+#explore .card{
+    background: url(https://m.media-amazon.com/images/I/61f4SI+bXWL.jpg);
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+}
+#explore .card:hover{
+    background: url(https://cdn5.vectorstock.com/i/thumb-large/20/99/realistic-paper-coffee-cup-large-size-coffee-vector-14722099.jpg) no-repeat;
+    background-size: cover;
+    transition: o.5s;
+}
+#blogs{
+    background: #D6AD60;
+    background-size: cover;
+}
+#blogs .text h2{
+      font-size: 30px;
+      color: #F4EBD0;
+      text-align: center;
+}
+#blogs .img img{
+    width: 400px;
+    height: auto;
+   margin-left: 450px;
+}
+footer .content{
+    background: #D6AD60;
+    width: 100%;
+    height: 100%;
+}
+footer .content h2{
+    color: #F4EBD0;
+    text-align: center;
+}
+footer .content ul{
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+footer .content ul li{
+    display: inline;
+   margin:0px 10px;
+}
+footer .content ul li a{
+    color:#122620;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+footer .content ul li a:hover{
+    color: crimson;
+}
+footer .content .text p{
+    color:#122620;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+}
